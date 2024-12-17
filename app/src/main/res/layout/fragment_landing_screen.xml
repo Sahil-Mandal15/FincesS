@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/md_theme_background"
+    tools:context=".view.fragments.LandingScreenFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/fincess_logo"
+            android:layout_width="match_parent"
+            android:layout_height="248dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fincess_logo_nobg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fincess"
+            android:textSize="54sp"
+            app:fontFamily="@font/alumni_sans_inline_one_italic"
+            app:layout_constraintTop_toBottomOf="@id/fincess_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="fill_parent"
+            android:layout_height="240dp"
+            app:cardCornerRadius="20dp"
+            android:backgroundTint="@color/md_theme_secondaryContainer"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:text="Have control over your"
+                    android:textSize="24sp"
+                    app:fontFamily="@font/montserrat"
+                    android:textStyle="bold"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="62dp"
+                    android:fontFamily="@font/poppins_black_italic"
+                    android:text="FINANCES"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="58dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Master your MONEY,"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/montserrat_extralight_italic" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="44dp"
+                    android:text="Empower your FUTURE"
+                    app:fontFamily="@font/montserrat_extralight_italic"
+                    android:textSize="18sp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_get_started"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded_button"
+                    app:fontFamily="@font/poppins_black_italic"
+                    android:text="Get Started"
+                    android:textSize="31sp"
+                    android:textColor="@color/md_theme_surface"
+                    android:textAlignment="center"
+                    android:clickable="true"
+                    android:layout_marginTop="8dp"/>
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "885550559602",
+    "project_id": "fincess-36c83",
+    "storage_bucket": "fincess-36c83.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885550559602:android:fa32b9664c36f4e860edeb",
+        "android_client_info": {
+          "package_name": "com.sahilm.fincess"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "885550559602-3evo1im4pu8ee709o719ib5pd3ijcfr2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sahilm.fincess",
+            "certificate_hash": "233c6ee7ce2684c892ad8e3572d568676e46d4a7"
+          }
+        },
+        {
+          "client_id": "885550559602-sg5kmn1e113voritevvifa6l41r71pfq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmvAbrCivr2FU_8yWVqRzebctCpSx1iFg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "885550559602-sg5kmn1e113voritevvifa6l41r71pfq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
