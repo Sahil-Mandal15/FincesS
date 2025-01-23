@@ -1,10 +1,8 @@
 package com.sahilm.fincess.di
 
 import android.content.Context
-import com.sahilm.fincess.repository.AuthRepository
-import com.sahilm.fincess.repository.BaseAuthRepository
-import com.sahilm.fincess.repository.auth.BaseAuth
-import com.sahilm.fincess.repository.auth.GoogleAuth
+import com.sahilm.fincess.db.AppDatabase
+import com.sahilm.fincess.db.TransactionDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -16,18 +14,14 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object AppModule {
 
-    @Singleton
     @Provides
-    fun provideGoogleAuthClient(@ApplicationContext context: Context): BaseAuth {
-        return GoogleAuth(context)
+    @Singleton
+    fun provideDatabase(@ApplicationContext context: Context): AppDatabase {
+        return AppDatabase.getDatabase(context)
     }
 
-    @Singleton
     @Provides
-    fun provideAuthRepository(
-        googleAuthClient: BaseAuth
-    ) : BaseAuthRepository {
-        return AuthRepository(googleAuthClient)
+    fun provideTransactionDao(appDatabase: AppDatabase): TransactionDao {
+        return appDatabase.transactionDao()
     }
-
 }

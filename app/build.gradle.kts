@@ -91,4 +91,27 @@ dependencies {
 
     // ViewModel
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7")
+
+    //Data Store
+    implementation("androidx.datastore:datastore-preferences:1.1.1")
+    implementation("androidx.datastore:datastore-preferences-core:1.1.1")
+
+    // Glide
+    implementation ("com.github.bumptech.glide:glide:4.16.0")
+
+    // hdodenhof-circularImageView
+    implementation("de.hdodenhof:circleimageview:3.1.0")
+
+    // MPAndroid chart
+    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
+
+    //Room Db
+    implementation("androidx.room:room-runtime:2.5.0")
+    ksp("androidx.room:room-compiler:2.5.0")
+    implementation("androidx.room:room-ktx:2.5.0")
+
+    implementation("com.google.code.gson:gson:2.10.1")
+
+
+
 }

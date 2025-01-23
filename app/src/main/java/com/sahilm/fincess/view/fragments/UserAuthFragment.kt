@@ -9,6 +9,7 @@ import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.sahilm.fincess.R
+import com.sahilm.fincess.auth.CredentialHelper
 import com.sahilm.fincess.databinding.FragmentUserAuthBinding
 import com.sahilm.fincess.viewmodel.FincessViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -20,6 +21,7 @@ class UserAuthFragment() : Fragment() {
     private var _binding: FragmentUserAuthBinding? = null
     private val binding get() = _binding!!
     private val viewModel: FincessViewModel by activityViewModels()
+    lateinit var credentialHelper: CredentialHelper
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,15 +35,18 @@ class UserAuthFragment() : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        credentialHelper = CredentialHelper(requireContext())
+
         binding.btnSignIn.setOnClickListener {
             lifecycleScope.launch {
-                viewModel.signIn()
-
-                if (viewModel.isSignedIn()) {
-                    // Navigate to HomeScreenFragment
-                    findNavController().navigate(R.id.action_userAuthFragment_to_homeScreenFragment)
-                }
+                credentialHelper.signIn()
+                findNavController().navigate(R.id.action_userAuthFragment_to_homeScreenFragment)
             }
         }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        credentialHelper.clearCredentialManager()
     }
 }

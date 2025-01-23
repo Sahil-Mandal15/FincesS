@@ -1,41 +1,41 @@
 {
   "project_info": {
-    "project_number": "885550559602",
-    "project_id": "fincess-36c83",
-    "storage_bucket": "fincess-36c83.firebasestorage.app"
+    "project_number": "255791949817",
+    "project_id": "fincess-7ec46",
+    "storage_bucket": "fincess-7ec46.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:885550559602:android:fa32b9664c36f4e860edeb",
+        "mobilesdk_app_id": "1:255791949817:android:c7658296d84c56cb6ebf28",
         "android_client_info": {
           "package_name": "com.sahilm.fincess"
         }
       },
       "oauth_client": [
         {
-          "client_id": "885550559602-3evo1im4pu8ee709o719ib5pd3ijcfr2.apps.googleusercontent.com",
+          "client_id": "255791949817-kgpov57j15lq2gf9dg7ckf5k1d2c9v7l.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.sahilm.fincess",
-            "certificate_hash": "233c6ee7ce2684c892ad8e3572d568676e46d4a7"
+            "certificate_hash": "cda261339d75823fc35646a57b39d8e4d35286d4"
           }
         },
         {
-          "client_id": "885550559602-sg5kmn1e113voritevvifa6l41r71pfq.apps.googleusercontent.com",
+          "client_id": "255791949817-uqls5uemh55vvv6b79s8dp5emfntshkh.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDmvAbrCivr2FU_8yWVqRzebctCpSx1iFg"
+          "current_key": "AIzaSyBjVknIz4Z6Com-w0krduyU-p7V6QTdFzg"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "885550559602-sg5kmn1e113voritevvifa6l41r71pfq.apps.googleusercontent.com",
+              "client_id": "255791949817-uqls5uemh55vvv6b79s8dp5emfntshkh.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

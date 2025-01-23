@@ -6,6 +6,22 @@
     app:startDestination="@id/landingScreenFragment">
 
     <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.sahilm.fincess.view.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_userAuthFragment"
+            app:destination="@id/userAuthFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/statsFragment"
+        android:name="com.sahilm.fincess.view.fragments.StatsFragment"
+        android:label="fragment_stats"
+        tools:layout="@layout/fragment_stats" />
+
+    <fragment
         android:id="@+id/homeScreenFragment"
         android:name="com.sahilm.fincess.view.fragments.HomeScreenFragment"
         android:label="fragment_home_screen"
@@ -14,6 +30,7 @@
             android:id="@+id/action_homeScreenFragment_to_userAuthFragment"
             app:destination="@id/userAuthFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/userAuthFragment"
         android:name="com.sahilm.fincess.view.fragments.UserAuthFragment"
